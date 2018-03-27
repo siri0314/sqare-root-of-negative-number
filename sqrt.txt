@@ -1,0 +1,26 @@
+package program56;
+public class Program56 {
+    public static void main(String[] args) {
+        // TODO code application logic here
+     int i=-3;
+     double s;
+        try{
+            if (i < 0) {
+                    throw new IllegalArgumentException("Only Positive Numbers & no negative numbers Please!");                   }
+            else{
+                s=Math.sqrt(i); 
+                System.out.println( "square root of "+i+"is"+s);
+            }
+      }
+      catch( IllegalArgumentException e ){
+      System.out.println(" Negative number is invalid for calculation of square root\n"+e);    
+      }
+
+    }
+    
+}
+Output:
+run:
+ Negative number is invalid for calculation of square root
+java.lang.IllegalArgumentException: Only Positive Numbers & no negative numbers Please!
+BUILD SUCCESSFUL (total time: 0 seconds)
